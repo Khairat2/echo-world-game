@@ -1,0 +1,19 @@
+# Publication allowlist: only reviewed game files and public documentation.
+# All other local content stays on disk but is excluded from future git add.
+# Add an explicit exception here when introducing a new game asset.
+/*
+!/.gitignore
+!/index.html
+!/style.css
+!/script.js
+!/startng.json
+!/cover.png
+!/README.md
+
+# Never publish credentials or local environment files.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
